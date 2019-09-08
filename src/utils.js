@@ -47,3 +47,6 @@ export const buildImageFromTiles = tiles => {
   image.updatePixels()
   return image
 }
+
+// Returned einen Klon des übergebenen Objekts, der keine Referenzen mehr enthält
+export const cloneDeep = obj => JSON.parse(JSON.stringify(obj))
